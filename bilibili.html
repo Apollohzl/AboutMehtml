@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo's Bilibili 页面框架</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* 使页面高度占满视口 */
+            background-image: url('https://s2.loli.net/2024/06/21/euQ48saP7UgMyDr.webp');
+            background-size: cover; /* 自动裁剪 */
+            background-position: center; /* 居中显示 */
+            background-repeat: no-repeat; /* 不重复背景 */
+        }
+        header {
+            background-color: #00A1D6;
+            color: white;
+            padding: 10px; /* 减少内边距 */
+            text-align: center;
+        }
+        nav {
+            background-color: #282c34;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #00A1D6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed; /* 固定在页面的指定位置 */
+            bottom: 0;      /* 距离底部为0 */
+            left: 0;        /* 从左边开始 */
+            width: 100%;    /* 宽度占满100% */
+            z-index: 1000;  /* 确保在其他内容之上 */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Apollo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">动画</a></li>
+        <li><a href="#">音乐</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">舞蹈</a></li>
+        <li><a href="#">科技</a></li>
+        <li><a href="#">鬼畜</a></li>
+        <li><a href="#">影视</a></li>
+        <li><a href="#">生活</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <h2>欢迎来到 黄梓林的主页</h2>
+        <p>这里是内容区域，可以展示视频、文章等信息。</p>
+        <!-- 这里可以添加更多内容 -->
+    </div>
+    <div class="sidebar">
+        <h3>推荐频道</h3>
+        <ul>
+            <li><a href="#">频道1</a></li>
+            <li><a href="#">频道2</a></li>
+            <li><a href="#">频道3</a></li>
+            <li><a href="#">频道4</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Apollo. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
